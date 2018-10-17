@@ -31,10 +31,10 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
   When I check the following ratings: R, PG
   And I uncheck the following ratings: G, PG-13
   And I press "ratings_submit"
-  Then I should see "PG"
-  And I should see "R"
-  And I should not see "<td>G</td>"
-  And I should not see "<td>PG-13</td>"
+  Then I should see "The Terminator"
+  And I should see "Amelie"
+  And I should not see "Aladdin"
+  And I should not see "The Help"
 
 Scenario: all ratings selected
   # see assignment
